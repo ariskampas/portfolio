@@ -12,14 +12,16 @@ body {
   font-size: 18px; /* body font size to 16px */
   line-height: 1.6; /* body line height is set to 1.6 */
   font-weight: 400; /* font weight is set to thin, 100 */
+  color: #333333; /* default copy color dark grey */
+  background-color: #ffffff; /* background color white */
 }
 h1 {
-  font-size: 32;  /* h1 font size to 30px */
+  font-size: 32px;  /* h1 font size to 30px */
   font-weight: 500; /*h1 font weight is bold, 500 */
   font-variant: small-caps; /* h1 all lowercase into small caps */
 }
 h2 {
-  font-size: 26;  /* h2 font size to 24px */
+  font-size: 26px;  /* h2 font size to 24px */
   font-weight: 500; /*h2 font weight is bold, 500 */
   font-variant: small-caps; /* h2 all lowercase into small caps */
   }
@@ -29,16 +31,10 @@ h3 {
   font-variant: small-caps; /* h3 all lowercase into small caps */
 }
 
-/* Margins and padding */
-div {
-  padding: 10px; /* all elements will have a 10px padding on all sides */
-  margin: 10px; /* all elements will have a 10px marging on all sides */
-}
-
 /* Links */
 a {
   /* link color light blue */
-  color: #75a3e7
+  color: #75a3e7;
   /* no underline in link */
   text-decoration:none;
 }
@@ -57,7 +53,7 @@ a:active {
 }
 
 /* Button */
-button {
+.button {
   /*overwrite browser defaults */
   border:none;
   font-family: inherit; /* take it from the outer container */
@@ -72,7 +68,7 @@ button {
   border-bottom: 0px;
   transition: 0.4s opacity;
 }
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
 }
