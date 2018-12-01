@@ -12,23 +12,26 @@ body {
   font-size: 18px; /* body font size to 16px */
   line-height: 1.6; /* body line height is set to 1.6 */
   font-weight: 400; /* font weight is set to thin, 100 */
-  color: #333333; /* default copy color dark grey */
+  color: #444444; /* default copy color dark grey */
   background-color: #ffffff; /* background color white */
 }
 h1 {
   font-size: 32px;  /* h1 font size to 30px */
   font-weight: 500; /*h1 font weight is bold, 500 */
   font-variant: small-caps; /* h1 all lowercase into small caps */
+  color: #333333;   /*default color for h1 is dark grey */
 }
 h2 {
   font-size: 26px;  /* h2 font size to 24px */
   font-weight: 500; /*h2 font weight is bold, 500 */
   font-variant: small-caps; /* h2 all lowercase into small caps */
+  color: #333333;   /*default color for h2 is dark grey */
   }
 h3 {
   font-size: 22px;  /* h3 font size to 18px */
   font-weight: 400; /*h3 font weight is regular, 400 */
   font-variant: small-caps; /* h3 all lowercase into small caps */
+  color: #333333;   /*default color for h3 is dark grey */
 }
 
 /* Links */
@@ -52,7 +55,7 @@ a:active {
   text-decoration:underline;
 }
 
-/* Button */
+/* Buttons */
 .button {
   /*overwrite browser defaults */
   border:none;
