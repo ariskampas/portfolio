@@ -5,33 +5,55 @@ secondary colors (grey lighter) #444444
 link color: light blue #75a3e7
 page background color white #ffffff
 */
-
 /* Typography */
 body {
-  font-family: 'Roboto', sans-serif; /* set body font*/
-  font-size: 18px; /* body font size to 16px */
-  line-height: 1.6; /* body line height is set to 1.6 */
-  font-weight: 400; /* font weight is set to thin, 100 */
-  color: #444444; /* default copy color dark grey */
-  background-color: #ffffff; /* background color white */
+  font-family: 'Roboto', sans-serif;
+  /* set body font*/
+  font-size: 18px;
+  /* body font size to 16px */
+  line-height: 1.6;
+  /* body line height is set to 1.6 */
+  font-weight: 400;
+  /* font weight is set to thin, 100 */
+  color: #444444;
+  /* default copy color dark grey */
+  background-color: #ffffff;
+  /* background color white */
 }
+
 h1 {
-  font-size: 32px;  /* h1 font size to 30px */
-  font-weight: 500; /*h1 font weight is bold, 500 */
-  font-variant: small-caps; /* h1 all lowercase into small caps */
-  color: #333333;   /*default color for h1 is dark grey */
+  font-size: 32px;
+  /* h1 font size to 30px */
+  font-weight: 500;
+  /*h1 font weight is bold, 500 */
+  font-variant: small-caps;
+  /* h1 all lowercase into small caps */
+  color: #333333;
+  /*default color for h1 is dark grey */
+  text-align: center;
+  /* Centers text */
 }
+
 h2 {
-  font-size: 26px;  /* h2 font size to 24px */
-  font-weight: 500; /*h2 font weight is bold, 500 */
-  font-variant: small-caps; /* h2 all lowercase into small caps */
-  color: #333333;   /*default color for h2 is dark grey */
-  }
+  font-size: 26px;
+  /* h2 font size to 24px */
+  font-weight: 500;
+  /*h2 font weight is bold, 500 */
+  font-variant: small-caps;
+  /* h2 all lowercase into small caps */
+  color: #333333;
+  /*default color for h2 is dark grey */
+}
+
 h3 {
-  font-size: 22px;  /* h3 font size to 18px */
-  font-weight: 400; /*h3 font weight is regular, 400 */
-  font-variant: small-caps; /* h3 all lowercase into small caps */
-  color: #333333;   /*default color for h3 is dark grey */
+  font-size: 22px;
+  /* h3 font size to 18px */
+  font-weight: 400;
+  /*h3 font weight is regular, 400 */
+  font-variant: small-caps;
+  /* h3 all lowercase into small caps */
+  color: #333333;
+  /*default color for h3 is dark grey */
 }
 
 /* Links */
@@ -39,27 +61,31 @@ a {
   /* link color light blue */
   color: #75a3e7;
   /* no underline in link */
-  text-decoration:none;
+  text-decoration: none;
 }
+
 a:visited {
   /*visited link*/
   color: #75a3e7;
 }
+
 a:hover,
 a:focus {
   /*hover over link underline*/
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 a:active {
   /*selected link*/
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 /* Buttons */
 .button {
   /*overwrite browser defaults */
-  border:none;
-  font-family: inherit; /* take it from the outer container */
+  border: none;
+  font-family: inherit;
+  /* take it from the outer container */
   font-weight: 500;
   /*style button */
   color: white !important;
@@ -71,7 +97,149 @@ a:active {
   border-bottom: 0px;
   transition: 0.4s opacity;
 }
+
 .button:hover,
 .button:focus {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+}
+
+/* Layout styling */
+.wrapper {
+  /*applied to all pages and the whole page */
+  width: 100%;
+  max-width: 1080px;
+  /* Because I love large resolutions */
+  margin: 0 auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 0 20px;
+}
+
+.columns-container {
+  /*remove spaces within container trick */
+  font-size: 0px;
+}
+
+.column-4 {
+  font-size: 16px;
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+  text-align: center;
+  /* Centers text */
+}
+
+.column-4:last-child {
+  margin-right: 0;
+  /*create a little bit of space in the right of the list */
+}
+
+/* styling the navigation menu */
+.menu-navigation {
+  list-style-type: none;
+  font-size: 22px;
+  font-variant: small-caps;
+  padding: 0;
+  float: right;
+  height: 50px;
+}
+
+.menu-navigation>li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* footer icons styling */
+.footer-icons {
+  list-style-type: none;
+}
+
+.footer-icons>li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-style {
+min-height: 200px;
+margin-top: 20%;
+}
+
+/* resizing and styling */
+@media all and (max-width: 992px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: 40px;
+  }
+
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+  }
+
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .menu-navigation {
+    font-size: 18px;
+  }
+
+  .column-4:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: 30px;
+  }
+
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 20px;
+  }
+
+  h3 {
+    /* Reduce font-size of heading */
+    font-size: 16px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .menu-navigation {
+    font-size: 16px;
+  }
 }
