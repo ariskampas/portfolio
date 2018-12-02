@@ -105,6 +105,10 @@ a:active {
 }
 
 /* Layout styling */
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   /*applied to all pages and the whole page */
   width: 100%;
@@ -139,9 +143,9 @@ a:active {
   list-style-type: none;
   font-size: 22px;
   font-variant: small-caps;
-  padding: 0;
+  padding: 0px;
+  margin: -40px;
   float: right;
-  height: 50px;
 }
 
 .menu-navigation>li {
@@ -151,7 +155,10 @@ a:active {
 
 /* footer icons styling */
 .footer-icons {
+  display: flex;
   list-style-type: none;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .footer-icons>li {
@@ -160,8 +167,11 @@ a:active {
 }
 
 .footer-style {
-min-height: 200px;
-margin-top: 20%;
+  margin-top: 200px;
+}
+
+.header_style {
+  margin: 10px 10px 150px 10px;
 }
 
 /* resizing and styling */
@@ -241,5 +251,13 @@ margin-top: 20%;
 
   .menu-navigation {
     font-size: 16px;
+    margin: 0px
+    
+
   }
+}
+
+.project_image {
+  max-height: 250px;
+  max-weight: 250px;
 }
