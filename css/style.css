@@ -156,6 +156,16 @@ nav ul>li {
   margin: 13px 10px 0px 10px;
 }
 
+nav ul li >a,
+nav ul li >a:visited,
+nav ul li >a:hover,
+nav ul li >a:active
+ {
+  color: #333333 !important;
+  text-decoration: none;
+}
+
+
 /* footer icons styling */
 .footer-icons {
   display: flex;
