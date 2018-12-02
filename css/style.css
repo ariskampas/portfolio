@@ -139,18 +139,21 @@ a:active {
 }
 
 /* styling the navigation menu */
-.menu-navigation {
+nav {
+  float: right;
+  }
+
+nav ul {
   list-style-type: none;
   font-size: 22px;
   font-variant: small-caps;
   padding: 0px;
-  margin: -40px;
-  float: right;
+  margin: 0px;
 }
 
-.menu-navigation>li {
+nav ul>li {
   display: inline-block;
-  margin: 10px;
+  margin: 13px 10px 0px 10px;
 }
 
 /* footer icons styling */
@@ -166,12 +169,13 @@ a:active {
   margin: 10px;
 }
 
-.footer-style {
+footer {
   margin-top: 200px;
 }
 
-.header_style {
-  margin: 10px 10px 150px 10px;
+header {
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 50px;
 }
 
 /* resizing and styling */
@@ -207,7 +211,7 @@ a:active {
     margin-right: 1%;
   }
 
-  .menu-navigation {
+  nav ul {
     font-size: 18px;
   }
 
@@ -249,11 +253,8 @@ a:active {
     margin-right: 0px;
   }
 
-  .menu-navigation {
+  nav ul {
     font-size: 16px;
-    margin: 0px
-    
-
   }
 }
 
