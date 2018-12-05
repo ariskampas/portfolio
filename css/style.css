@@ -37,6 +37,7 @@ h1 {
   /*default color for h1 is dark grey */
   text-align: center;
   /* Centers text */
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -48,6 +49,7 @@ h2 {
   /* h2 all lowercase into small caps */
   color: #333333;
   /*default color for h2 is dark grey */
+  text-align: center;
 }
 
 h3 {
@@ -102,12 +104,15 @@ button,
   border-radius: 3px;
   border-bottom: 0px;
   transition: 0.5s opacity;
+  text-align: center;
+  box-shadow: 0px 0px 5px #333333;
 }
 
 .button:hover,
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
+    box-shadow: 0px 0px 15px #555555;
   /* Reduces the opacity of the button to 80% */
 }
 
@@ -184,10 +189,11 @@ nav ul li>a:hover {
   list-style-type: none;
   justify-content: center;
   align-items: flex-end;
+  padding: 0;
 }
 
 .footer-icons>li {
-  display: inline-block;
+  display: flex;
   margin: 10px;
 }
 
@@ -196,106 +202,52 @@ footer {
 }
 
 header {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0;
   margin-bottom: 50px;
+
 }
 
 .spacing1 {
   padding-top: 50px;
 }
 
+img {
+  /* image sizing */
+  width: 100%;
 
-/* resizing and styling */
-@media all and (max-width: 992px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: 40px;
-  }
-
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 28px;
-    text-align: center;
-  }
-
-  h2 {
-    /* Reduce font-size of heading */
-    font-size: 24px;
-  }
-
-  h2 {
-    /* Reduce font-size of heading */
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .column-4 {
-    /* Modify 4-column to 2-columns */
-    width: 49%;
-    margin-right: 1%;
-  }
-
-  nav ul {
-    font-size: 18px;
-  }
-
-  .column-4:nth-child(2) {
-    margin-right: 0;
-  }
 }
 
-@media all and (max-width: 600px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: 30px;
-  }
+.logo {
+  /* Make logo smaller by changing it's width */
+  width: 300px;
+}
 
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 24px;
-    text-align: center;
-  }
+.profile_image {
+  text-align: center;
+}
 
-  h2 {
-    /* Reduce font-size of heading */
-    font-size: 20px;
-  }
+.center_button {
+  text-align: center;
+  margin: 50px;
+}
 
-  h3 {
-    /* Reduce font-size of heading */
-    font-size: 16px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 12px;
-  }
-
-  .column-4 {
-    /* Modify 4-column to 2-columns */
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  nav ul {
-    font-size: 16px;
-  }
+.profile_image img {
+  max-width: 400px;
+  box-shadow: 0px 0px 10px #444444;
 }
 
 .project_image {
-  /* image sizing */
-  max-height: 250px;
-  max-weight: 250px;
+    box-shadow: 0px 0px 15px #999999;
+    width: 100%;
 }
+
 
 /* svg and animation */
 #Layer_1 {
   /*make sure there is space top and bottom in our graphic */
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 15px #999999;
 }
 
 /* Sun glows like never before animation */
@@ -480,9 +432,11 @@ header {
     transform: scalex(1.02);
   }
 }
+
 .waves1 {
   animation: 4s waves_move infinite alternate-reverse ease;
 }
+
 .waves2 {
   animation: 4s waves_move infinite alternate ease;
 }
@@ -501,13 +455,14 @@ header {
     transform: translate(1700px, 0);
   }
 }
+
 #courtain {
   animation: 10s courtain_move infinite normal linear;
 }
+
 @keyframes aris_fades {
   0% {
     opacity: 1.0;
-
   }
 
   97% {
@@ -518,6 +473,108 @@ header {
     opacity: 0;
   }
 }
+
 .aris {
   animation: 10s aris_fades infinite normal linear;
+}
+
+
+/* resizing and styling */
+@media all and (max-width: 992px) {
+  header {
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+  }
+
+  h3 {
+    /* Reduce font-size of heading */
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  nav ul,
+  nav ul li {
+    font-size: 18px;
+  }
+
+  .column-4:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    width: 200px;
+  }
+
+  header {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 20px;
+  }
+
+  h3 {
+    /* Reduce font-size of heading */
+    font-size: 16px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+
+  .footer-icons>li {
+    display: flex;
+    margin: 5px;
+  }
+
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  nav {
+    float: unset;
+  }
+
+  nav ul,
+  nav ul li {
+    font-size: 16px;
+  }
 }
