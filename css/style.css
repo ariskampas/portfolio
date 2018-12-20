@@ -112,7 +112,7 @@ button,
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
-    box-shadow: 0px 0px 15px #555555;
+  box-shadow: 0px 0px 15px #555555;
   /* Reduces the opacity of the button to 80% */
 }
 
@@ -204,7 +204,6 @@ footer {
 header {
   padding: 10px 0;
   margin-bottom: 50px;
-
 }
 
 .spacing1 {
@@ -214,7 +213,6 @@ header {
 img {
   /* image sizing */
   width: 100%;
-
 }
 
 .logo {
@@ -237,10 +235,9 @@ img {
 }
 
 .project_image {
-    box-shadow: 0px 0px 15px #999999;
-    width: 100%;
+  box-shadow: 0px 0px 15px #999999;
+  width: 100%;
 }
-
 
 /* svg and animation */
 #Layer_1 {
@@ -478,7 +475,6 @@ img {
   animation: 10s aris_fades infinite normal linear;
 }
 
-
 /* resizing and styling */
 @media all and (max-width: 992px) {
   header {
@@ -556,7 +552,6 @@ img {
   p {
     font-size: 12px;
   }
-
 
   .footer-icons>li {
     display: flex;
